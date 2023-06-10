@@ -44,20 +44,18 @@ class TaskController extends Controller
         return TaskResource::make($task);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Task $task)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
      */
     public function update(UpdateTaskRequest $request, Task $task)
     {
-        //
+        Task::where('id', $task->id)->update([
+            'name' => $request->name,
+        ]);
+        
+        
+        return TaskResource::make($task);
     }
 
     /**
