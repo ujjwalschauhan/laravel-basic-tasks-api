@@ -1,4 +1,4 @@
-# Larvel 10: Create RESTful API with CRUD endpoints
+# Laravel 10: Create RESTful API with CRUD endpoints
 Create a RESTful Tasks API in Laravel v10 with basic C-R-U-D operations:
     
 | **METHOD** |	**ACTION** | **REQUEST**  | **Value** |
